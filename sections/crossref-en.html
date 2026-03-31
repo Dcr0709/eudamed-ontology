@@ -1,0 +1,842 @@
+<h2 id="crossreference" class="list">Cross-reference for EUDAMED Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by EUDAMED Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActiveDevice" title="http://www.uoc.edu/pac2/eudamed#ActiveDevice">Active Device</a></li>
+  <li><a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a></li>
+  <li><a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a></li>
+  <li><a href="#DeviceFailureIncident" title="http://www.uoc.edu/pac2/eudamed#DeviceFailureIncident">Device Failure Incident</a></li>
+  <li><a href="#EuropeanCountry" title="http://www.uoc.edu/pac2/eudamed#EuropeanCountry">European Country</a></li>
+  <li><a href="#HighRiskDevice" title="http://www.uoc.edu/pac2/eudamed#HighRiskDevice">High Risk Device</a></li>
+  <li><a href="#ImplantableDevice" title="http://www.uoc.edu/pac2/eudamed#ImplantableDevice">Implantable Device</a></li>
+  <li><a href="#InSituCorrection" title="http://www.uoc.edu/pac2/eudamed#InSituCorrection">In Situ Correction</a></li>
+  <li><a href="#InVitroDiagnosticDevice" title="http://www.uoc.edu/pac2/eudamed#InVitroDiagnosticDevice">In Vitro Diagnostic Device</a></li>
+  <li><a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a></li>
+  <li><a href="#InfectionRisk" title="http://www.uoc.edu/pac2/eudamed#InfectionRisk">Infection Risk</a></li>
+  <li><a href="#InjuryRisk" title="http://www.uoc.edu/pac2/eudamed#InjuryRisk">Injury Risk</a></li>
+  <li><a href="#Location" title="http://www.uoc.edu/pac2/eudamed#Location">Location</a></li>
+  <li><a href="#MalfunctionRisk" title="http://www.uoc.edu/pac2/eudamed#MalfunctionRisk">Malfunction Risk</a></li>
+  <li><a href="#Manufacturer" title="http://www.uoc.edu/pac2/eudamed#Manufacturer">Manufacturer</a></li>
+  <li><a href="#Recall" title="http://www.uoc.edu/pac2/eudamed#Recall">Recall</a></li>
+  <li><a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a></li>
+  <li><a href="#SafetyAlert" title="http://www.uoc.edu/pac2/eudamed#SafetyAlert">Safety Alert</a></li>
+  <li><a href="#SeriousIncident" title="http://www.uoc.edu/pac2/eudamed#SeriousIncident">Serious Incident</a></li>
+  <li><a href="#SoftwareUpdate" title="http://www.uoc.edu/pac2/eudamed#SoftwareUpdate">Software Update</a></li>
+ </ul>
+ <div class="entity" id="ActiveDevice">
+  <h3>Active Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#ActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Device needing energy.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CorrectiveAction">
+  <h3>Corrective Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#CorrectiveAction</p>
+  <div class="comment">
+   <span class="markdown">Field Safety Corrective Action.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#InSituCorrection" title="http://www.uoc.edu/pac2/eudamed#InSituCorrection">In Situ Correction</a> <sup class="type-c" title="class">c</sup>, <a href="#Recall" title="http://www.uoc.edu/pac2/eudamed#Recall">Recall</a> <sup class="type-c" title="class">c</sup>, <a href="#SafetyAlert" title="http://www.uoc.edu/pac2/eudamed#SafetyAlert">Safety Alert</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftwareUpdate" title="http://www.uoc.edu/pac2/eudamed#SoftwareUpdate">Software Update</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.uoc.edu/pac2/eudamed#addressesIncident">addresses incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#mitigatesRisk" title="http://www.uoc.edu/pac2/eudamed#mitigatesRisk">mitigates risk</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Device</p>
+  <div class="comment">
+   <span class="markdown">A medical device or IVD.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActiveDevice" title="http://www.uoc.edu/pac2/eudamed#ActiveDevice">Active Device</a> <sup class="type-c" title="class">c</sup>, <a href="#HighRiskDevice" title="http://www.uoc.edu/pac2/eudamed#HighRiskDevice">High Risk Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableDevice" title="http://www.uoc.edu/pac2/eudamed#ImplantableDevice">Implantable Device</a> <sup class="type-c" title="class">c</sup>, <a href="#InVitroDiagnosticDevice" title="http://www.uoc.edu/pac2/eudamed#InVitroDiagnosticDevice">In Vitro Diagnostic Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#deviceName" title="http://www.uoc.edu/pac2/eudamed#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isManufacturedBy" title="http://www.uoc.edu/pac2/eudamed#isManufacturedBy">is manufactured by</a> <sup class="type-op" title="object property">op</sup>, <a href="#riskClass" title="http://www.uoc.edu/pac2/eudamed#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#involvesDevice" title="http://www.uoc.edu/pac2/eudamed#involvesDevice">involves device</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DeviceFailureIncident">
+  <h3>Device Failure Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#DeviceFailureIncident</p>
+  <div class="comment">
+   <span class="markdown">Event caused by malfunction.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EuropeanCountry">
+  <h3>European Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#EuropeanCountry</p>
+  <div class="comment">
+   <span class="markdown">EU Member State.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Location" title="http://www.uoc.edu/pac2/eudamed#Location">Location</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Germany" title="http://www.uoc.edu/pac2/eudamed#Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Ireland" title="http://www.uoc.edu/pac2/eudamed#Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HighRiskDevice">
+  <h3>High Risk Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#HighRiskDevice</p>
+  <div class="comment">
+   <span class="markdown">Class III or D devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableDevice">
+  <h3>Implantable Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#ImplantableDevice</p>
+  <div class="comment">
+   <span class="markdown">Device meant to be implanted.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-001" title="http://www.uoc.edu/pac2/eudamed#DEV-001">HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InSituCorrection">
+  <h3>In Situ Correction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#InSituCorrection</p>
+  <div class="comment">
+   <span class="markdown">Fixing the device at the user location.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InVitroDiagnosticDevice">
+  <h3>In Vitro Diagnostic Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#InVitroDiagnosticDevice</p>
+  <div class="comment">
+   <span class="markdown">IVD device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Incident">
+  <h3>Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Incident</p>
+  <div class="comment">
+   <span class="markdown">Adverse event.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#DeviceFailureIncident" title="http://www.uoc.edu/pac2/eudamed#DeviceFailureIncident">Device Failure Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#SeriousIncident" title="http://www.uoc.edu/pac2/eudamed#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasRisk" title="http://www.uoc.edu/pac2/eudamed#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup>, <a href="#involvesDevice" title="http://www.uoc.edu/pac2/eudamed#involvesDevice">involves device</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedBy" title="http://www.uoc.edu/pac2/eudamed#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.uoc.edu/pac2/eudamed#addressesIncident">addresses incident</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InfectionRisk">
+  <h3>Infection Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#InfectionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk of biological contamination.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InjuryRisk">
+  <h3>Injury Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#InjuryRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk of physical harm to patient.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#RSK-003" title="http://www.uoc.edu/pac2/eudamed#RSK-003">Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Location">
+  <h3>Location<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Location</p>
+  <div class="comment">
+   <span class="markdown">Geographical location.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#EuropeanCountry" title="http://www.uoc.edu/pac2/eudamed#EuropeanCountry">European Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#countryName" title="http://www.uoc.edu/pac2/eudamed#countryName">country name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#locatedIn" title="http://www.uoc.edu/pac2/eudamed#locatedIn">located in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MalfunctionRisk">
+  <h3>Malfunction Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#MalfunctionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk of mechanical/electrical failure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manufacturer">
+  <h3>Manufacturer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Manufacturer</p>
+  <div class="comment">
+   <span class="markdown">Company producing devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#locatedIn" title="http://www.uoc.edu/pac2/eudamed#locatedIn">located in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isManufacturedBy" title="http://www.uoc.edu/pac2/eudamed#isManufacturedBy">is manufactured by</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedBy" title="http://www.uoc.edu/pac2/eudamed#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#MAN-001" title="http://www.uoc.edu/pac2/eudamed#MAN-001">Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recall">
+  <h3>Recall<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Recall</p>
+  <div class="comment">
+   <span class="markdown">Removal of product from market.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Risk">
+  <h3>Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Risk</p>
+  <div class="comment">
+   <span class="markdown">Potential harm source.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#InfectionRisk" title="http://www.uoc.edu/pac2/eudamed#InfectionRisk">Infection Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#InjuryRisk" title="http://www.uoc.edu/pac2/eudamed#InjuryRisk">Injury Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#MalfunctionRisk" title="http://www.uoc.edu/pac2/eudamed#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRisk" title="http://www.uoc.edu/pac2/eudamed#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup>, <a href="#mitigatesRisk" title="http://www.uoc.edu/pac2/eudamed#mitigatesRisk">mitigates risk</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SafetyAlert">
+  <h3>Safety Alert<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#SafetyAlert</p>
+  <div class="comment">
+   <span class="markdown">Warning notice to users.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA-001" title="http://www.uoc.edu/pac2/eudamed#FSCA-001">EU-FSCA-2024-000001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeriousIncident">
+  <h3>Serious Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#SeriousIncident</p>
+  <div class="comment">
+   <span class="markdown">Event causing severe harm.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#INC-001" title="http://www.uoc.edu/pac2/eudamed#INC-001">EU-INC-2024-000001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoftwareUpdate">
+  <h3>Software Update<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#SoftwareUpdate</p>
+  <div class="comment">
+   <span class="markdown">Action to patch software bugs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#addressesIncident" title="http://www.uoc.edu/pac2/eudamed#addressesIncident">addresses incident</a></li>
+  <li><a href="#hasRisk" title="http://www.uoc.edu/pac2/eudamed#hasRisk">has risk</a></li>
+  <li><a href="#involvesDevice" title="http://www.uoc.edu/pac2/eudamed#involvesDevice">involves device</a></li>
+  <li><a href="#isManufacturedBy" title="http://www.uoc.edu/pac2/eudamed#isManufacturedBy">is manufactured by</a></li>
+  <li><a href="#locatedIn" title="http://www.uoc.edu/pac2/eudamed#locatedIn">located in</a></li>
+  <li><a href="#mitigatesRisk" title="http://www.uoc.edu/pac2/eudamed#mitigatesRisk">mitigates risk</a></li>
+  <li><a href="#reportedBy" title="http://www.uoc.edu/pac2/eudamed#reportedBy">reported by</a></li>
+ </ul>
+ <div class="entity" id="addressesIncident">
+  <h3>addresses incident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#addressesIncident</p>
+  <div class="comment">
+   <span class="markdown">Relates FSCA to an incident.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRisk">
+  <h3>has risk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#hasRisk</p>
+  <div class="comment">
+   <span class="markdown">Relates an incident to the specific risk.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="involvesDevice">
+  <h3>involves device<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#involvesDevice</p>
+  <div class="comment">
+   <span class="markdown">Relates an incident to the affected device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isManufacturedBy">
+  <h3>is manufactured by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#isManufacturedBy</p>
+  <div class="comment">
+   <span class="markdown">Relates a device to its maker.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.uoc.edu/pac2/eudamed#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="locatedIn">
+  <h3>located in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#locatedIn</p>
+  <div class="comment">
+   <span class="markdown">Geographical location of a manufacturer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.uoc.edu/pac2/eudamed#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Location" title="http://www.uoc.edu/pac2/eudamed#Location">Location</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mitigatesRisk">
+  <h3>mitigates risk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#mitigatesRisk</p>
+  <div class="comment">
+   <span class="markdown">Inferred property of what risk is mitigated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.uoc.edu/pac2/eudamed#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.uoc.edu/pac2/eudamed#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportedBy">
+  <h3>reported by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#reportedBy</p>
+  <div class="comment">
+   <span class="markdown">Inferred property of who reports the incident.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.uoc.edu/pac2/eudamed#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.uoc.edu/pac2/eudamed#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#countryName" title="http://www.uoc.edu/pac2/eudamed#countryName">country name</a></li>
+  <li><a href="#deviceName" title="http://www.uoc.edu/pac2/eudamed#deviceName">device name</a></li>
+  <li><a href="#riskClass" title="http://www.uoc.edu/pac2/eudamed#riskClass">risk class</a></li>
+ </ul>
+ <div class="entity" id="countryName">
+  <h3>country name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#countryName</p>
+  <div class="comment">
+   <span class="markdown">String representation of the country.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Location" title="http://www.uoc.edu/pac2/eudamed#Location">Location</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceName">
+  <h3>device name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#deviceName</p>
+  <div class="comment">
+   <span class="markdown">Commercial name of the device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskClass">
+  <h3>risk class<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#riskClass</p>
+  <div class="comment">
+   <span class="markdown">MDR/IVDR risk classification.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.uoc.edu/pac2/eudamed#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#FSCA-001" title="http://www.uoc.edu/pac2/eudamed#FSCA-001">EU-FSCA-2024-000001</a></li>
+  <li><a href="#INC-001" title="http://www.uoc.edu/pac2/eudamed#INC-001">EU-INC-2024-000001</a></li>
+  <li><a href="#Germany" title="http://www.uoc.edu/pac2/eudamed#Germany">Germany</a></li>
+  <li><a href="#DEV-001" title="http://www.uoc.edu/pac2/eudamed#DEV-001">HeartMate 3 LVAD</a></li>
+  <li><a href="#Ireland" title="http://www.uoc.edu/pac2/eudamed#Ireland">Ireland</a></li>
+  <li><a href="#MAN-001" title="http://www.uoc.edu/pac2/eudamed#MAN-001">Medtronic plc</a></li>
+  <li><a href="#RSK-003" title="http://www.uoc.edu/pac2/eudamed#RSK-003">Thrombosis - device-related</a></li>
+ </ul>
+ <div class="entity" id="FSCA-001">
+  <h3>EU-FSCA-2024-000001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#FSCA-001</p>
+  <div class="comment">
+   <span class="markdown">Anticoagulation protocol alert from CSV.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SafetyAlert" title="http://www.uoc.edu/pac2/eudamed#SafetyAlert">Safety Alert</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.uoc.edu/pac2/eudamed#addressesIncident">addresses incident</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-001" title="http://www.uoc.edu/pac2/eudamed#INC-001">EU-INC-2024-000001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-001">
+  <h3>EU-INC-2024-000001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#INC-001</p>
+  <div class="comment">
+   <span class="markdown">Ischemic stroke incident from CSV.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.uoc.edu/pac2/eudamed#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasRisk" title="http://www.uoc.edu/pac2/eudamed#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-003" title="http://www.uoc.edu/pac2/eudamed#RSK-003">Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#involvesDevice" title="http://www.uoc.edu/pac2/eudamed#involvesDevice">involves device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-001" title="http://www.uoc.edu/pac2/eudamed#DEV-001">HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Germany">
+  <h3>Germany<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Germany</p>
+  <div class="comment">
+   <span class="markdown">EU Country.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#EuropeanCountry" title="http://www.uoc.edu/pac2/eudamed#EuropeanCountry">European Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#countryName" title="http://www.uoc.edu/pac2/eudamed#countryName">country name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Germany"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-001">
+  <h3>HeartMate 3 LVAD<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#DEV-001</p>
+  <div class="comment">
+   <span class="markdown">Ventricular assist device from CSV.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ImplantableDevice" title="http://www.uoc.edu/pac2/eudamed#ImplantableDevice">Implantable Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#isManufacturedBy" title="http://www.uoc.edu/pac2/eudamed#isManufacturedBy">is manufactured by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.uoc.edu/pac2/eudamed#MAN-001">Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.uoc.edu/pac2/eudamed#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"HeartMate 3 LVAD"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.uoc.edu/pac2/eudamed#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIII"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Ireland">
+  <h3>Ireland<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#Ireland</p>
+  <div class="comment">
+   <span class="markdown">EU Country.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#EuropeanCountry" title="http://www.uoc.edu/pac2/eudamed#EuropeanCountry">European Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#countryName" title="http://www.uoc.edu/pac2/eudamed#countryName">country name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Ireland"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-001">
+  <h3>Medtronic plc<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#MAN-001</p>
+  <div class="comment">
+   <span class="markdown">Medical device company.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.uoc.edu/pac2/eudamed#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#locatedIn" title="http://www.uoc.edu/pac2/eudamed#locatedIn">located in</a> <sup class="type-op" title="object property">op</sup> <a href="#Ireland" title="http://www.uoc.edu/pac2/eudamed#Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-003">
+  <h3>Thrombosis - device-related<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.uoc.edu/pac2/eudamed#RSK-003</p>
+  <div class="comment">
+   <span class="markdown">Thrombus risk from CSV.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#InjuryRisk" title="http://www.uoc.edu/pac2/eudamed#InjuryRisk">Injury Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

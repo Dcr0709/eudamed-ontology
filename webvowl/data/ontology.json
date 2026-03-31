@@ -1,0 +1,726 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.uoc.edu/pac2/eudamed", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.uoc.edu/pac2/eudamed",
+    "labels" : {
+      "en" : "EUDAMED Medical Devices Ontology"
+    },
+    "comments" : {
+      "en" : "Ontology modelling EU Medical Devices, Incidents, Risks and Corrective Actions."
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Incident",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "subClasses" : [ "1", "2" ],
+    "comment" : {
+      "en" : "Adverse event."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#SafetyAlert",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#FSCA-001",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "Anticoagulation protocol alert from CSV."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "EU-FSCA-2024-000001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Warning notice to users."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#InjuryRisk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#RSK-003",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "Thrombus risk from CSV."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk of physical harm to patient."
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#ImplantableDevice",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#DEV-001",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "Ventricular assist device from CSV."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "Device meant to be implanted."
+    },
+    "id" : "13",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Recall",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "Removal of product from market."
+    },
+    "id" : "15",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#ActiveDevice",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Device"
+    },
+    "comment" : {
+      "en" : "Device needing energy."
+    },
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#InfectionRisk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk"
+    },
+    "comment" : {
+      "en" : "Risk of biological contamination."
+    },
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Risk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "subClasses" : [ "18", "19", "9" ],
+    "comment" : {
+      "en" : "Potential harm source."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#EuropeanCountry",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EuropeanCountry",
+      "en" : "European Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#Ireland",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "EU Country."
+      },
+      "labels" : {
+        "IRI-based" : "Ireland",
+        "en" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#Germany",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "EU Country."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany"
+      }
+    } ],
+    "comment" : {
+      "en" : "EU Member State."
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#InSituCorrection",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In Situ Correction"
+    },
+    "comment" : {
+      "en" : "Fixing the device at the user location."
+    },
+    "id" : "23",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Location",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "subClasses" : [ "21" ],
+    "comment" : {
+      "en" : "Geographical location."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#CorrectiveAction",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Corrective Action"
+    },
+    "subClasses" : [ "35", "23", "5", "15" ],
+    "comment" : {
+      "en" : "Field Safety Corrective Action."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Device",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "subClasses" : [ "17", "13", "32", "30" ],
+    "comment" : {
+      "en" : "A medical device or IVD."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#HighRiskDevice",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighRiskDevice",
+      "en" : "High Risk Device"
+    },
+    "comment" : {
+      "en" : "Class III or D devices."
+    },
+    "id" : "30",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#SeriousIncident",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#INC-001",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "Ischemic stroke incident from CSV."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "EU-INC-2024-000001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Event causing severe harm."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#SoftwareUpdate",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareUpdate",
+      "en" : "Software Update"
+    },
+    "comment" : {
+      "en" : "Action to patch software bugs."
+    },
+    "id" : "35",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#Manufacturer",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/pac2/eudamed#MAN-001",
+      "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+      "comment" : {
+        "en" : "Medical device company."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "Company producing devices."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#MalfunctionRisk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "comment" : {
+      "en" : "Risk of mechanical/electrical failure."
+    },
+    "id" : "19",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "In Vitro Diagnostic Device"
+    },
+    "comment" : {
+      "en" : "IVD device."
+    },
+    "id" : "32",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#DeviceFailureIncident",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceFailureIncident",
+      "en" : "Device Failure Incident"
+    },
+    "comment" : {
+      "en" : "Event caused by malfunction."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#involvesDevice",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Relates an incident to the affected device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#reportedBy",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Inferred property of who reports the incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#deviceName",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "device name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Commercial name of the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#isManufacturedBy",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isManufacturedBy",
+      "en" : "is manufactured by"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates a device to its maker."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#addressesIncident",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "addressesIncident",
+      "en" : "addresses incident"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates FSCA to an incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#hasRisk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "en" : "has risk"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Relates an incident to the specific risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "10",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "4",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#riskClass",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "riskClass",
+      "en" : "risk class"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "MDR/IVDR risk classification."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#mitigatesRisk",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "mitigatesRisk",
+      "en" : "mitigates risk"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Inferred property of what risk is mitigated."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "6",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "6",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#countryName",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "countryName",
+      "en" : "country name"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "String representation of the country."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.uoc.edu/pac2/eudamed#locatedIn",
+    "baseIri" : "http://www.uoc.edu/pac2/eudamed",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "en" : "located in"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Geographical location of a manufacturer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  } ]
+}
