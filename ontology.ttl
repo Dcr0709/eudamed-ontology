@@ -1,0 +1,311 @@
+@prefix : <http://www.uoc.edu/pac2/eudamed#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.uoc.edu/pac2/eudamed#> .
+
+<http://www.uoc.edu/pac2/eudamed> rdf:type owl:Ontology ;
+                                   rdfs:comment "Ontology modelling EU Medical Devices, Incidents, Risks and Corrective Actions."@en ;
+                                   rdfs:label "EUDAMED Medical Devices Ontology"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.uoc.edu/pac2/eudamed#addressesIncident
+:addressesIncident rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CorrectiveAction ;
+                   rdfs:range :Incident ;
+                   rdfs:comment "Relates FSCA to an incident."@en ;
+                   rdfs:label "addresses incident"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#hasRisk
+:hasRisk rdf:type owl:ObjectProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range :Risk ;
+         rdfs:comment "Relates an incident to the specific risk."@en ;
+         rdfs:label "has risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#involvesDevice
+:involvesDevice rdf:type owl:ObjectProperty ;
+                rdfs:domain :Incident ;
+                rdfs:range :Device ;
+                rdfs:comment "Relates an incident to the affected device."@en ;
+                rdfs:label "involves device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#isManufacturedBy
+:isManufacturedBy rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Device ;
+                  rdfs:range :Manufacturer ;
+                  rdfs:comment "Relates a device to its maker."@en ;
+                  rdfs:label "is manufactured by"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Manufacturer ;
+           rdfs:range :Location ;
+           rdfs:comment "Geographical location of a manufacturer."@en ;
+           rdfs:label "located in"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#mitigatesRisk
+:mitigatesRisk rdf:type owl:ObjectProperty ;
+               rdfs:domain :CorrectiveAction ;
+               rdfs:range :Risk ;
+               rdfs:comment "Inferred property of what risk is mitigated."@en ;
+               rdfs:label "mitigates risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#reportedBy
+:reportedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range :Manufacturer ;
+            rdfs:comment "Inferred property of who reports the incident."@en ;
+            rdfs:label "reported by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.uoc.edu/pac2/eudamed#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Location ;
+             rdfs:range xsd:string ;
+             rdfs:comment "String representation of the country."@en ;
+             rdfs:label "country name"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#deviceName
+:deviceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Device ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Commercial name of the device."@en ;
+            rdfs:label "device name"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#riskClass
+:riskClass rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Device ;
+           rdfs:range xsd:string ;
+           rdfs:comment "MDR/IVDR risk classification."@en ;
+           rdfs:label "risk class"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.uoc.edu/pac2/eudamed#ActiveDevice
+:ActiveDevice rdf:type owl:Class ;
+              rdfs:subClassOf :Device ;
+              rdfs:comment "Device needing energy."@en ;
+              rdfs:label "Active Device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#CorrectiveAction
+:CorrectiveAction rdf:type owl:Class ;
+                  rdfs:comment "Field Safety Corrective Action."@en ;
+                  rdfs:label "Corrective Action"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :isManufacturedBy ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Manufacturer
+                        ] ;
+        rdfs:comment "A medical device or IVD."@en ;
+        rdfs:label "Device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#DeviceFailureIncident
+:DeviceFailureIncident rdf:type owl:Class ;
+                       rdfs:subClassOf :Incident ;
+                       rdfs:comment "Event caused by malfunction."@en ;
+                       rdfs:label "Device Failure Incident"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#EuropeanCountry
+:EuropeanCountry rdf:type owl:Class ;
+                 rdfs:subClassOf :Location ;
+                 rdfs:comment "EU Member State."@en ;
+                 rdfs:label "European Country"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#HighRiskDevice
+:HighRiskDevice rdf:type owl:Class ;
+                rdfs:subClassOf :Device ;
+                rdfs:comment "Class III or D devices."@en ;
+                rdfs:label "High Risk Device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#ImplantableDevice
+:ImplantableDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :Device ;
+                   rdfs:comment "Device meant to be implanted."@en ;
+                   rdfs:label "Implantable Device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#InSituCorrection
+:InSituCorrection rdf:type owl:Class ;
+                  rdfs:subClassOf :CorrectiveAction ;
+                  rdfs:comment "Fixing the device at the user location."@en ;
+                  rdfs:label "In Situ Correction"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :Device ;
+                         rdfs:comment "IVD device."@en ;
+                         rdfs:label "In Vitro Diagnostic Device"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvesDevice ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Device
+                          ] ;
+          rdfs:comment "Adverse event."@en ;
+          rdfs:label "Incident"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#InfectionRisk
+:InfectionRisk rdf:type owl:Class ;
+               rdfs:subClassOf :Risk ;
+               rdfs:comment "Risk of biological contamination."@en ;
+               rdfs:label "Infection Risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#InjuryRisk
+:InjuryRisk rdf:type owl:Class ;
+            rdfs:subClassOf :Risk ;
+            rdfs:comment "Risk of physical harm to patient."@en ;
+            rdfs:label "Injury Risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Geographical location."@en ;
+          rdfs:label "Location"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#MalfunctionRisk
+:MalfunctionRisk rdf:type owl:Class ;
+                 rdfs:subClassOf :Risk ;
+                 rdfs:comment "Risk of mechanical/electrical failure."@en ;
+                 rdfs:label "Malfunction Risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:comment "Company producing devices."@en ;
+              rdfs:label "Manufacturer"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :CorrectiveAction ;
+        rdfs:comment "Removal of product from market."@en ;
+        rdfs:label "Recall"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:comment "Potential harm source."@en ;
+      rdfs:label "Risk"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf :CorrectiveAction ;
+             rdfs:comment "Warning notice to users."@en ;
+             rdfs:label "Safety Alert"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident ;
+                 rdfs:comment "Event causing severe harm."@en ;
+                 rdfs:label "Serious Incident"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#SoftwareUpdate
+:SoftwareUpdate rdf:type owl:Class ;
+                rdfs:subClassOf :CorrectiveAction ;
+                rdfs:comment "Action to patch software bugs."@en ;
+                rdfs:label "Software Update"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.uoc.edu/pac2/eudamed#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ,
+                  :ImplantableDevice ;
+         :isManufacturedBy :MAN-001 ;
+         :deviceName "HeartMate 3 LVAD" ;
+         :riskClass "ClassIII" ;
+         rdfs:comment "Ventricular assist device from CSV."@en ;
+         rdfs:label "HeartMate 3 LVAD"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   :SafetyAlert ;
+          :addressesIncident :INC-001 ;
+          rdfs:comment "Anticoagulation protocol alert from CSV."@en ;
+          rdfs:label "EU-FSCA-2024-000001"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :EuropeanCountry ;
+         :countryName "Germany" ;
+         rdfs:comment "EU Country."@en ;
+         rdfs:label "Germany"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :hasRisk :RSK-003 ;
+         :involvesDevice :DEV-001 ;
+         rdfs:comment "Ischemic stroke incident from CSV."@en ;
+         rdfs:label "EU-INC-2024-000001"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  :EuropeanCountry ;
+         :countryName "Ireland" ;
+         rdfs:comment "EU Country."@en ;
+         rdfs:label "Ireland"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedIn :Ireland ;
+         rdfs:comment "Medical device company."@en ;
+         rdfs:label "Medtronic plc"@en .
+
+
+###  http://www.uoc.edu/pac2/eudamed#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  :InjuryRisk ;
+         rdfs:comment "Thrombus risk from CSV."@en ;
+         rdfs:label "Thrombosis - device-related"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
